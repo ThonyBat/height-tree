@@ -3,19 +3,15 @@
  */
 package tree.height.app;
 
-import tree.height.list.LinkedList;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
-import static tree.height.utilities.StringUtils.join;
-import static tree.height.utilities.StringUtils.split;
-import static tree.height.app.MessageUtils.getMessage;
-
-import org.apache.commons.text.WordUtils;
+import java.io.File;
+import java.io.IOException;
 
 public class App {
-    public static void main(String[] args) {
-        LinkedList tokens;
-        tokens = split(getMessage());
-        String result = join(tokens);
-        System.out.println(WordUtils.capitalize(result));
+    public static void main(String[] args) throws IOException {
+        ObjectMapper objectMapper = new ObjectMapper();
+        Links links = objectMapper.readValue(new File("L:/dev/height-tree/app/src/main/resources/tree.json"), Links.class);
+        System.out.println(links);
     }
 }

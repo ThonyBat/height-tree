@@ -1,0 +1,13 @@
+[
+	{
+		"parent": "person",
+		"children": [
+			"patient",
+			"user"
+		]
+	},
+	{
+		"parent": "patient",
+		"child": "user"
+	}
+]

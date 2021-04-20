@@ -7,8 +7,7 @@ plugins {
 }
 
 dependencies {
-    implementation("org.apache.commons:commons-text")
-    implementation(project(":utilities"))
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.11.1")
 }
 
 application {
