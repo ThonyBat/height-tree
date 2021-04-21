@@ -43,8 +43,11 @@ public class Links {
     }
 
     private void updateHeight(String node, Integer heightParent) {
-        if (!(Links.HEIGHT.get(node) > heightParent))
+        if (!(Links.HEIGHT.get(node) > heightParent)) {
             Links.HEIGHT.put(node, heightParent + 1);
+            if (Links.MAP.containsKey(node))
+                Links.MAP.get(node).stream().forEach(child -> updateHeight(child, heightParent + 1));
+        }
     }
 
     @Override

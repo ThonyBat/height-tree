@@ -11,7 +11,7 @@ import java.io.IOException;
 public class App {
     public static void main(String[] args) throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
-        Links links = objectMapper.readValue(new File("L:/dev/height-tree/app/src/main/resources/tree.json"), Links.class);
+        Links links = objectMapper.readValue(new File("C:/dev/height-tree/app/src/main/resources/tree.json"), Links.class);
         System.out.println(links);
     }
 }

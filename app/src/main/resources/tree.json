@@ -2,12 +2,460 @@
 	{
 		"parent": "person",
 		"children": [
+			"acceptance",
+			"auth_cert",
+			"bio_items",
+			"business_log",
+			"calendar_event_person",
+			"comm",
+			"comms_last_viewed",
+			"contact_person",
+			"custom_comm_level",
+			"destinataire",
+			"device_association",
+			"external_person_id",
+			"group_destinataire",
+			"md",
+			"message",
+			"node_patient",
+			"notification",
+			"order",
 			"patient",
+			"person_alias",
+			"person_calendar",
+			"person_file",
+			"person_reg",
+			"profile_criterion",
+			"room",
+			"signature",
+			"social_commentaire",
+			"social_entity",
+			"social_messages",
+			"social_sharing",
 			"user"
 		]
 	},
 	{
+		"parent": "activity",
+		"children": [
+			"activity_availability",
+			"activity_category",
+			"contact_activity"
+		]
+	},
+	{
+		"parent": "advice",
+		"child": "advice_rule"
+	},
+	{
+		"parent": "advice_sheet",
+		"child": "advice"
+	},
+	{
+		"parent": "question",
+		"child": "advice"
+	},
+	{
+		"parent": "type_dossier",
+		"children": [
+			"advice",
+			"alert_config_group",
+			"comm_group_type_dossier",
+			"comm_type_dossier",
+			"dossier",
+			"ppsgroup"
+		]
+	},
+	{
+		"parent": "advice_constant_rule",
+		"child": "advice_rule"
+	},
+	{
+		"parent": "social_entity_thread",
+		"children": [
+			"advice_social_entity_thread",
+			"article_social_entity_thread",
+			"badges_entity",
+			"calendar_event",
+			"comm",
+			"consult",
+			"person_reg",
+			"question_social_entity_thread",
+			"social_entity",
+			"vaccine",
+			"vital"
+		]
+	},
+	{
+		"parent": "dossier",
+		"children": [
+			"alert_check_log",
+			"alert_config_dossier",
+			"atcd_item",
+			"atcd_photo",
+			"attach_list",
+			"attachment",
+			"badges_entity",
+			"clinical_document",
+			"comm",
+			"consult",
+			"destinataire",
+			"ehd_data",
+			"evenement",
+			"exam_freq",
+			"external_doss_id",
+			"group_dossier",
+			"group_trait",
+			"immuno",
+			"map_bean",
+			"pps_data",
+			"signature",
+			"traitement",
+			"transfusion",
+			"vaccine",
+			"vital",
+			"vital_record"
+		]
+	},
+	{
+		"parent": "alert_config",
+		"children": [
+			"alert_check_log",
+			"alert_config_group",
+			"alert_rule"
+		]
+	},
+	{
+		"parent": "alert_rule",
+		"child": "alert_config_dossier"
+	},
+	{
+		"parent": "group_node",
+		"children": [
+			"alert_config_group",
+			"anemia_params",
+			"calendar_event",
+			"comm_group_node",
+			"doc_node",
+			"document_sharing",
+			"external_gr_node_id",
+			"form",
+			"group_destinataire",
+			"group_link",
+			"map_bean_gr_node",
+			"nested_group_node",
+			"order",
+			"organism_calendar"
+		]
+	},
+	{
+		"parent": "function_right",
+		"child": "app_level_function_right"
+	},
+	{
+		"parent": "right_class_2",
+		"child": "app_level_function_right"
+	},
+	{
+		"parent": "apps",
+		"children": [
+			"map_bean_app",
+			"right_class",
+			"right_class_2",
+			"session",
+			"user_apps"
+		]
+	},
+	{
+		"parent": "atcd_photo",
+		"child": "atcd_item"
+	},
+	{
+		"parent": "consult",
+		"children": [
+			"atcd_photo",
+			"consult_form",
+			"consult_map_bean",
+			"external_consult_id",
+			"recommandation"
+		]
+	},
+	{
+		"parent": "attach_list",
+		"children": [
+			"attachment",
+			"comm",
+			"consult",
+			"doc_link_attach_list",
+			"evenement",
+			"examen",
+			"form"
+		]
+	},
+	{
+		"parent": "attachment",
+		"children": [
+			"attach_mapbean",
+			"attachment_external_binary",
+			"calendar_event"
+		]
+	},
+	{
+		"parent": "map_bean",
+		"children": [
+			"attach_mapbean",
+			"comm",
+			"consult_map_bean",
+			"context",
+			"context_prescription",
+			"evenement_map_bean",
+			"external_mapbean_id",
+			"map_bean_bio_record",
+			"map_bean_generic_product",
+			"map_bean_group_trait",
+			"map_bean_medical_procedure",
+			"map_bean_vital_record",
+			"social_messages"
+		]
+	},
+	{
+		"parent": "device_association",
+		"child": "auth_cert"
+	},
+	{
+		"parent": "pps_data",
+		"children": [
+			"badges_entity",
+			"pps_data_pps_def",
+			"pps_data_transition",
+			"pps_item_data"
+		]
+	},
+	{
+		"parent": "biology",
+		"children": [
+			"bio_items",
+			"comm",
+			"map_bean_bio_record"
+		]
+	},
+	{
+		"parent": "organism",
+		"children": [
+			"biology",
+			"catalog",
+			"contact_organism",
+			"context",
+			"product"
+		]
+	},
+	{
 		"parent": "patient",
-		"child": "user"
+		"children": [
+			"biology",
+			"dossier",
+			"filien_patient",
+			"note_patient",
+			"pathos"
+		]
+	},
+	{
+		"parent": "calendar",
+		"child": "calendar_event"
+	},
+	{
+		"parent": "calendar_event",
+		"children": [
+			"calendar_event_dossier",
+			"comm",
+			"external_calendar_event_id"
+		]
+	},
+	{
+		"parent": "generic_product",
+		"children": [
+			"catalog",
+			"default_catalog",
+			"map_bean_generic_product",
+			"product_gp"
+		]
+	},
+	{
+		"parent": "clinical_document",
+		"children": [
+			"clinical_document_component_of",
+			"clinical_document_documentation_of",
+			"clinical_document_section"
+		]
+	},
+	{
+		"parent": "md",
+		"children": [
+			"comm",
+			"context",
+			"external_md_id",
+			"signature",
+			"traitement"
+		]
+	},
+	{
+		"parent": "comm",
+		"children": [
+			"comm_action",
+			"comm_group_node",
+			"comm_type_dossier",
+			"dmedica_alert",
+			"external_comm_id",
+			"map_bean_id_message"
+		]
+	},
+	{
+		"parent": "comm_event_action_detail",
+		"children": [
+			"comm_action",
+			"comm_event_action_workflow"
+		]
+	},
+	{
+		"parent": "comm_group",
+		"children": [
+			"comm_group_type_dossier",
+			"comm_group_user"
+		]
+	},
+	{
+		"parent": "form",
+		"children": [
+			"consult_form",
+			"doc_link_form"
+		]
+	},
+	{
+		"parent": "context",
+		"child": "context_prescription"
+	},
+	{
+		"parent": "group_destinataire",
+		"child": "destinataire"
+	},
+	{
+		"parent": "message",
+		"children": [
+			"destinataire",
+			"group_destinataire"
+		]
+	},
+	{
+		"parent": "doc_node",
+		"children": [
+			"doc_link_attach_list",
+			"doc_link_form"
+		]
+	},
+	{
+		"parent": "evenement",
+		"child": "evenement_map_bean"
+	},
+	{
+		"parent": "group_trait",
+		"children": [
+			"external_group_trait_id",
+			"map_bean_group_trait",
+			"traitement"
+		]
+	},
+	{
+		"parent": "map_bean_typedoss",
+		"child": "external_mapbean_typedoss_id"
+	},
+	{
+		"parent": "traitement",
+		"child": "external_trait_id"
+	},
+	{
+		"parent": "medical_procedure",
+		"children": [
+			"map_bean_medical_procedure",
+			"medical_procedure_product"
+		]
+	},
+	{
+		"parent": "vital_record",
+		"children": [
+			"map_bean_vital_record",
+			"vital"
+		]
+	},
+	{
+		"parent": "type_org",
+		"child": "organism"
+	},
+	{
+		"parent": "person_reg",
+		"child": "person_reg_right_class"
+	},
+	{
+		"parent": "ppsgroup",
+		"child": "pps_attache"
+	},
+	{
+		"parent": "pps_def",
+		"children": [
+			"pps_attache",
+			"pps_data_pps_def",
+			"pps_data_transition",
+			"pps_def_transition",
+			"pps_item_def"
+		]
+	},
+	{
+		"parent": "pps_item_def",
+		"child": "pps_item_data"
+	},
+	{
+		"parent": "product",
+		"child": "product_gp"
+	},
+	{
+		"parent": "user",
+		"children": [
+			"refresh_token",
+			"user_apps",
+			"user_has_otp_device"
+		]
+	},
+	{
+		"parent": "room",
+		"children": [
+			"room_activity",
+			"room_circulation",
+			"sensor"
+		]
+	},
+	{
+		"parent": "security_function",
+		"child": "security_function_profile"
+	},
+	{
+		"parent": "security_profile",
+		"child": "security_function_profile"
+	},
+	{
+		"parent": "sensor",
+		"children": [
+			"sensor_activity",
+			"sensor_functionality"
+		]
+	},
+	{
+		"parent": "social_messages",
+		"child": "social_commentaries"
+	},
+	{
+		"parent": "suggester",
+		"children": [
+			"suggester_condition",
+			"suggester_out_criterion"
+		]
 	}
 ]
